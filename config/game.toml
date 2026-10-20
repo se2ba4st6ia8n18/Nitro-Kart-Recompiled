@@ -1,0 +1,22 @@
+# Recompiler input for default.xbe, written by xbe_symbols
+
+[xbe]
+path = "assets/default.xbe"
+title = 0x5655001F
+entry = 0x31A892
+xdk = 5558
+out = "generated/game"
+partitions = 128
+code_sections = [".text", "D3D", "D3DX", "XGRPH", "PSGSFD00", "PSGSFD_I", "PSGSFD_B", "PSGSFD_P", "DSOUND", "WMADEC", "XPP"]
+
+# extra entry points
+[functions]
+
+# functions the host replaces or calls by name, 0 where the image has none
+[symbols]
+
+[data]
+
+# argument locations in API order for functions a link time code generated library compiled with another
+# convention: a register (eax ebx ecx edx esi edi ebp) or "stack" for the next stack slot, which the callee pops
+[abi]
